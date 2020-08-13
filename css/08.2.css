@@ -1,0 +1,57 @@
+.container{border: 1px solid gold;}
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+	border: 1px solid black;
+padding: 0px;}
+img{opacity: 5;
+}
+img:hover {opacity: 0.9;}
+.img{width: 100%;
+	height: auto;
+	position: relative;
+}
+.mark{width: 50%;
+	height: 30px;
+	position: absolute;
+	top: 173px;
+	left: 70px;
+	background: rgb(0, 0, 0, 0);
+	text-align: center;
+	box-shadow: inset 0px 0px 30px 5px white;
+	border-radius: 5px;
+}
+.text{color: #fff;
+	font-family: cursive;
+}
+.mark2{width: 50%;
+	height: 30px;
+	padding: 0.2em;
+	position: absolute;
+	top: 215px;
+	left: 70px;
+	background: rgb(0, 0, 0, 0);
+	text-align: center;
+	box-shadow: inset 0px 0px 30px 5px yellow;
+	border-radius: 5px;
+}
+.mark3{width: 50%;
+	height: 30px;
+	padding: 0.2em;
+	position: absolute;
+	top: 385px;
+	left: 70px;
+	background: rgb(0, 0, 0, 0);
+	text-align: center;
+	box-shadow: inset 0px 0px 30px 5px green;
+	border-radius: 5px;
+}
+.mark4{width: 50%;
+	height: 30px;
+	padding: 0.2em;
+	position: absolute;
+	top: 150px;
+	left: 70px;
+	background: rgb(0, 0, 0, 0);
+	text-align: center;
+	box-shadow: inset 0px 0px 30px 5px violet;
+	border-radius: 5px;
+}

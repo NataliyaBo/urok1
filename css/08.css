@@ -1,0 +1,140 @@
+*{margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{padding: 0;
+	background: white;
+    font-family: "Comic Sans MS", "Ink Free", Arial, "MV Boli";
+    color: orange;
+}
+.container{width: 1170px;
+	margin: auto;
+}
+.sticky{position: static;
+}
+.menu{background: #A020F0;
+	color: #f00;
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 1.8em;
+	text-align: center;
+	position:;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+.menu ul{list-style-type: none;
+  }
+.menu li{display: inline;
+	margin: 0 8px;}
+.menu li a{color: #ADFF2F;}
+.menu li a:hover{color: yellow;}
+.menu a{text-decoration: none;
+}
+
+.news{background: #FAFAD2;
+	width: 185px;
+	color: #665;
+	margin: 10px 0;
+	float: left;
+}
+.left_bar{width: 190px;
+	margin: 0px 5px 5px 5px;
+	float: left;
+}
+.news h3{color: #f60;
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+}
+.news ul{list-style-type: none;}
+.news li{font-size: 80%;
+	padding: 5px 10px;
+}
+.img {background: #fff;
+	width: 185px;
+	margin: 5px 0px;
+	float: left;
+	text-align: center;
+}
+.foto{width: 185px;
+	height: 164px;
+	float: left;
+}
+.welcome{background: #F5DEB3;
+	width: 185px;
+	margin: 10px 0 0;
+	float: left;
+}
+.welcome h3{color: orange;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;	
+}
+.welcome p{color: #000;
+	text-align: center;
+}
+.right_bar{width: 300px;
+	margin: 10px 5px;
+	padding: 0;
+	float: right;
+}
+.members{width: 300px;
+	margin: 7px 0 7px;
+	float: right;
+}
+.members h2{color: #FF4500;
+	font-size: 120%;
+	font-weight: bold;
+	text-align: center;
+}
+.members ol{color: #999;
+	font-size: 120%;
+	margin: 10px;
+	float: left;
+	list-style-type: none;
+}
+.members li{margin: 0.5px 5px;
+}
+.members li a:hover{color: #f00;}
+.img_members{width: 300px;
+	height: 260px;
+	margin: 0;
+	float: right;
+}
+.text{margin: 10px; 
+	font-size: .9em;
+	color: #000;
+	margin-top: 10px;
+	margin-left: 200px;
+	margin-right: 310px;
+	padding: 0;
+}
+.text p{text-align: justify;
+	text-indent: 1.5em;
+	margin: 0;
+	padding: 0 10px;
+}
+.img_sirenevui1{
+	width: 185px;
+	height: 240px;
+	margin: 10px 10px 10px 10px;
+	float: right;
+}
+.img_belui1{width: 230px;
+	height: 307px;
+	margin: 10px 10px 3px 10px;
+	float: left;
+}
+.footer{background: #E6E6FA;
+	width: 100%;
+	color: #000;
+	font-size: 70%;
+	padding: 5px;
+	clear: both;
+}
+.footer a{color: #333;}
+.footer a:hover{color: #f00;}
+.footer p{padding: 2px;
+	text-align: center;
+}
+.clearfloat{clear: both;}

@@ -1,0 +1,169 @@
+body {font-family: Arial; padding: 0px 80px 0px 80px;}
+		.menu{height: 50px;
+			background-color: green;
+			position: fixed;
+            top: 0px;
+            width: 1192px;
+            display: table;
+            text-align: all;
+            }	
+        .static{height: 100px;
+        	background-color: #ff4500;
+        }
+		.s1{color: green !important;}
+		.s01{color: #ff4500}
+		.s2{font-weight: bold; color: #55da11;}
+		.s3{color: snow;}
+        .s4{color: black;
+            text-align: center;
+            }
+		.bg1{background-color: red;}
+		.bg2{background-color: green;}
+		.bg3{background-color: #ff4500;}
+        .bg4{background: pink;}
+		.sz1{height: 50px;
+			width:90px;
+			float: right;
+			margin: 100px;
+			padding: 10px;
+			border-width: 4px;
+			border-color: yellow;
+			border-style: solid;
+			border-radius: 8px;}
+        .sz2{height: 0px;
+             width: 100px; 
+             float: center;
+             margin: 1px;
+             padding: 1px;
+             border-width: 0px;
+             border-color: #ff4500;
+			 border-style: solid;
+			 border-radius: 8px; }
+
+		
+		.par1{height: 200px; width: 200px; background-color: red;
+			transition: background-color 1s 1s linear;
+		}
+		.par1:hover {background-color: green;}
+		.chld1{height: 20px; width: 20px; background-color: yellow;			
+			position: relative; top: 10px; left: 20px;
+		}
+		.sticky{position: sticky; 
+            top: 0px;
+			bottom: 0px;
+			left: 100px;
+			right: 100px;}
+
+		.sticky0{position: sticky;
+			top: 0px;
+        }	
+
+        .sticky1{position: sticky;
+			height: 0px;
+			bottom: 100px;
+			left: 100px;
+			right: 100px;}
+    .menu ul{list-style: none;
+	       margin: 0;
+	       padding-left: 0;
+	       background: pink;
+	       height: 20px;
+	       margin-top: 0px;
+	       display: table-row;
+           }
+    .menu li{display: table-cell;
+    	   position: relative;
+	       background: pink;
+	   }
+    .menu ul li:hover, .menu a:hover{background: gold}
+
+    .menu a:hover {background: lightpink;
+            text-align: all;}
+    .menu li a{display: block;
+              padding: 25px 65px;
+              color: #191970;
+              text-align: center;}
+    .menu-caret:after {display: inline-block;
+    	       width: 0;
+    	       height: 0;
+    	       margin-left: .255em;
+    	       vertical-align: .255em;
+    	       content: "";
+    	       border-top: 3px solid ;
+    	       border-right: 3px solid transparent;
+    	       border-bottom: 0;
+    	       border-left: 3px solid transparent;}
+    .menu li:hover ul{display: block;
+    	position: absolute;
+    	top: 100%;
+    	left: 0px;
+    	background: gold;
+    	margin: 0;
+    	padding: 10px 20px;
+    	width: 150px;
+    	z-index: 9999;}	        
+    .menu ul ul{display: none;}
+    .menu ul ul li{display: block;
+    	background: gold;
+    	padding: 5px 0;}
+    .menu ul ul li a{display: block;
+    	padding: 0;
+    	background: gold;
+    	text-align: left;;
+    }
+    .static1{height: 500px;
+    	width: 150px;
+        float: left;
+        background: #ffb6c1;
+        margin-top: 103px;
+        margin-left: 0;
+        padding: 1px;
+    }
+    .relative{position: relative;
+        width: 778px;
+        height: 170px;
+    	top: 103px;
+    	left: 5px;}
+.static1 ul{list-style: none; 
+    padding: 10px;
+    padding-top: 5px;
+}
+.static1 li{list-style: none;
+    position: relative;
+    background: pink;
+}    
+.static1 ul li:hover .static1 a:hover{background: pink;}
+.static1 a:hover{background: pink;
+                text-align: all;
+                }  
+.static1-caret:after{display: inline-block;
+}               
+.stati1 li:hover ul{display: block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}               
+.static1 ul ul{list-style: none;} 
+.static1 ul ul li{list-style: none;
+    background: pink;
+}               
+.static1 ul ul li a{display: block;
+    background: pink;
+    text-align: left;
+}
+.text{margin-top: 100px;
+   border: 5px;
+}
+.text h1{text-align: center;}
+.style p{width: : 250px;
+}
+.style img{float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+   width: 180px;
+   height: 180px;
+}
+.style1 {float: right;
+    width: 180px;
+    height: 190px;
+}
