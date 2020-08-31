@@ -1,0 +1,128 @@
+*{margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial;
+}
+.forma{width: 701px;  /* относится к div*/
+    height: auto;
+    background: gainsboro;
+
+}
+form{border: 1px solid black;
+    width: 700px;
+    margin: 2px;
+    padding: 0 0 0 7px;
+}
+.wrap1{display: block;
+    margin: 5px 0 0 0;
+
+}
+.yourFam{display: inline-block;
+
+}
+.lab1{display: inline-block;
+    width: 100px;
+
+}
+.inp1{display: inline-block;
+    margin: 0 8px 5px 0;
+    border: 1px solid black;
+
+}
+.yourCity{display: inline-block;
+    margin: 5px 0 0 0;
+
+}
+.lab2{display: inline-block;
+    width: 100px;
+
+}
+.inp2{display: inline-block;
+    margin: 0 8px 5px 0;
+    border: 1px solid black;
+}
+
+.wrap2 {display: inline-block;
+
+}
+.rdMaleFemale{display: block;
+    width: 257px;
+    margin: 5px 0 0 0;
+}
+.spnMF{display: inline-block;
+    width: 100px;
+
+}
+.mf1{display: inline-block;
+
+}
+.mf2{display: inline-block;
+
+}
+.whoaYou{display: block;
+    margin: 5px 0 0 0;
+
+}
+.spwaYou{display: inline-block;
+    margin: 0 5px 0 0;
+
+}
+.labwaYou{display: inline-block;
+
+}
+.inpwaYou{display: inline-block;
+
+}
+.fileFoto{display: block;
+    margin: 5px 0 0 0;
+
+}
+.labFoto{display: inline-block;
+    margin: 0 5px 0 0;
+
+}
+.inpFoto{display: inline-block;
+}
+.msg{display: block;
+    margin: 5px 0 0 0;
+
+}
+.labTxt{display: block;
+
+}
+/*.inpTxt{display: inline-block;}*/
+.bigTxt{border: 1px solid black;
+}
+textarea{width: 685px;
+    height: 130px;
+    padding: 5px;
+    resize: none;
+
+}
+
+.matem{display: block;
+    margin: 5px 0 0 0;
+
+}
+.matem1{display: inline-block;
+    margin: 0 5px 0 0;
+
+}
+.matem2{display: inline-block;
+    border: 1px solid black;
+}
+.primeru{
+    width: 78px;
+    height: 26px;
+}
+.bootm{width: auto;
+padding: 8px;
+}
+.btm{width: 100%;
+    display: inline-block;
+}
+
+.bottom{border: 1px solid black;
+    float: right;
+    padding: 3px;
+}

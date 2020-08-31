@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/js10.1.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="forma">
+    <form>
+        <div class="wrap1">
+            <div class="yourFam">
+                <div class="lab1"><label for="yourTxtFam">Фамилия</label></div>
+                <div class="inp1"><input id="yourTxtFam" class="youFame" type="text" name="txtfam" required/></div>
+            </div>
+            <div class="yourFam">
+                <div class="lab1"><label for="yourTxtName">Имя</label></div>
+                <div class="inp1"><input id="yourTxtName" class="youName" type="text" name="txtname" required/></div>
+            </div>
+        </div>
+        <div class="wrap1">
+            <div class="yourCity">
+                <div class="lab2"><label for="yourBigCity">Город</label></div>
+                <div class="inp2"><input id="yourBigCity" class="youCity" type="text" name="city"/></div>
+            </div>
+            <div class="yourCity">
+                <div class="lab2"><label for="yourBigArea">Область</label></div>
+                <div class="inp2"><input id="yourBigArea" class="youArea" type="text" name="area"/></div>
+            </div>
+        </div>
+        <!--<div class="wrap2">-->
+        <div class="rdMaleFemale">
+            <div class="spnMF"><span>Пол</span></div>
+            <div class="mf1"><label for="radMale">М</label></div>
+            <div class="mf2"><input id="radMale" class="radMaleFemale" type="radio" name="gender" value="m"/></div>
+            <div class="mf1"><label for="radFeale">Ж</label></div>
+            <div class="mf2"><input id="radFeale" class="radMaleFemale" type="radio" name="gender" value="f"/></div>
+        </div>
+        <div class="whoaYou">
+            <div class="spwaYou"><span>Вы сова или жаворонок?</span></div>
+            <div class="labwaYou"><label for="youOwl">Сова</label></div>
+            <div class="inpwaYou"><input id="youOwl" class="whoareYou" type="radio" name="bird" value="owl"/></div>
+            <div class="labwaYou"><label for="youLark">Жаворонок</label></div>
+            <div class="inpwaYou"><input id="youLark" class="whoareYou" type="radio" name="bird" value="lark"/></div>
+        </div>
+        <!--</div>-->
+        <div class="fileFoto">
+            <div class="labFoto"><label for="yourFoto">Загрузить фото</label></div>
+            <div class="inpFoto"><input id="yourFoto" class="myFoto" type="file"/></div>
+        </div>
+        <div class="msg">
+            <div class="labTxt"><label for="yourTxt">Ваше сообщение</label></div>
+            <div class="inpTxt"><textarea id="yourTxt" class="bigTxt" type="text" name="txt" wrap="soft" required></textarea>
+            </div>
+        </div>
+        <div class="matem">
+            <div class="matem1"><label for="vubor">Выбрать верное решение</label></div>
+            <div class="matem2"><select id="vubor" class="primeru" name="primer" required>
+                <option value="primer1">4+6=12</option>
+                <option value="primer2">5*8=40</option>
+                <option value="primer3">1+3=5</option>
+            </select>
+            </div>
+        </div>
+        <div class="bootm">
+            <input class="bottom" type="submit" value="Отправить"/>
+            <div style="clear: both;"></div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

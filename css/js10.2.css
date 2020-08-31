@@ -1,0 +1,28 @@
+form{border: 1.5px solid black;
+    width: 620px;
+}
+table{padding: 5px;}
+.forma{border: 1.5px solid black;
+    width: 625px;
+    height: auto;
+}
+textarea{width: 400px;
+    height: 120px;
+    resize: none;
+    padding: 5px;
+
+}
+.YouArea{
+
+}
+.yName{padding: 0 0 0 12px;
+}
+.yArea{padding: 0 0 0 12px;
+
+}
+.bTxt{width: 100%;
+
+}
+.subt{float: right;
+
+}

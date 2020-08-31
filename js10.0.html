@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js10</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/js10.0.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        a=2;
+        console.log(a);
+    </script>
+    <style>
+        .pnlForm{border: solid 2px black;}
+        .frmRow{display: block;}
+        .frmCol{display: inline-block;}
+        .frmColLabel{display: inline-block; width: 140px;}
+        .frmColInput{display: inline-block;}
+    </style>
+</head>
+<body>
+
+<div class="pnlForm">
+    <form>
+        <div class="frmRow">
+            <div class="frmCol">
+                <div class="frmColLabel">1hjhhjhk ljl gj</div>
+                <div class="frmColInput"><input type="text" /></div>
+            </div>
+            <div class="frmCol">
+                <div class="frmColLabel">2hjhgj</div>
+                <div class="frmColInput"><input type="text" /></div>
+            </div>
+        </div>
+        <div class="frmRow">
+            <div class="frmCol">
+                <div class="frmColLabel">3hjh</div>
+                <div class="frmColInput"><input type="text" /></div>
+            </div>
+            <div class="frmCol">
+                <div class="frmColLabel">4hjh hkjeh leligj</div>
+                <div class="frmColInput">
+                    <input type="radio" name="rb" /> <label>jhjh</label>
+                    <input type="radio" name="rb" /><label>jhjh</label>
+                </div>
+            </div>
+        </div>
+        <div class="frmRow">
+            <input type="submit"/>
+            <input type="button" value="xxx"/>
+        </div>
+    </form>
+</div>
+
+<form style="border: solid 2px green">
+    <label for="inpTxtFamily">Фамилия</label>
+    <input id="inpTxtFamily" class="cssInpTxt" name="family" type="text"/><br/>
+    <label for="inpTxtName">Имя</label>
+    <input id="inpTxtName" class="cssInpTxt" name="name" type="text" placeholder="имя" value="Иван" readonly/><br/>
+
+    <label for="inpChkAgree">Согласие</label>
+    <input id="inpChkAgree" class="cssInpChk" name="isAgree" value="y" type="checkbox"/>
+    <label for="inpChkUslovie">Условие</label>
+    <input id="inpChkUslovie" class="cssInpChk" name="isUslovie" value="y" type="checkbox" checked="checked"/><br/>
+
+    <span>Пол</span>
+    <label for="inpRadGenderMale">М</label>
+    <input id="inpRadGenderMale" class="cssInpRad" name="gender" value="m" type="radio"/>
+    <label for="inpRadGenderFemale">Ж</label>
+    <input id="inpRadGenderFemale" class="cssInpRad" name="gender" value="f" type="radio" checked/><br/>
+
+    <input id="inpHdnSys" type="hidden" name="sys" value="sys val"/><br/>
+
+    <label for="inpFile">файл</label>
+    <input id="inpFile" type="file" name="fileFromUser"/><br/>
+
+    <label for="selZnachenie">Выбор значения</label>
+    <select id="selZnachenie" class="cssSelZnachenie" name="znachenie">
+        <option value="z1">Значение 103854тке глнлукгпн лукшпн лдушкпн душкп</option>
+        <option value="z2">Значение 2</option>
+    </select><br/>
+
+    <label for="txtaBigText">Большой текст</label>
+    <textarea id="txtaBigText" name="bigText">орормкбурлмлриерб л4д 4рим</textarea><br/>
+
+    <input type="submit"/><br/>
+    <input type="button" value="кнопка1"/><br/>
+</form>
+
+<input type="button" value="press" onclick="alert('jhbdfjyhrf')"/>
+<input type="button" value="press" onclick="$('#pnlRed').toggle()"/>
+<div id="pnlRed" style="width: 50px;height: 50px;background: red;"></div>
+
+<input type="button" value="форма" onclick="$('#pnlFrm').show()"/>
+<div id="pnlFrm" class="pnlFrm" style="display: none;">
+    <form>
+        <label for="phone">телефон</label>
+        <input id="phone" type="text"/>
+
+        <label for="agree">согласие</label>
+        <input id="agree" type="checkbox" class="checkbox"/><br/>
+
+        <label for="message"><br/>сообщение</label>
+        <textarea id="message"></textarea>
+
+        <input type="submit" value="ok" class="submit"/>
+        <input type="button" value="cancel" onclick="$('#pnlFrm').hide()" class="button"/>
+    </form>
+</div>
+<input type="button" value="Заполнить форму" onclick="$('#newFrm').show()"/>
+<div id="newFrm" class="newFrm" style="display: none">
+ <form>
+
+    <input type="date"/><br/>
+
+    <input type="datetime-local"/><br/>
+
+    <label for="inpTimeFrom">Время</label>
+    <input id="inpTimeFrom" type="time"/><br/>
+
+    <label for="Email">Почта</label>
+    <input id="Email" type="email"/><br/>
+
+    <input type="file"/><br/>
+
+    <input type="image"/><br/>
+
+    <label for="Url">Введите ссылку</label>
+    <input id="Url" type="url"/><br/>
+
+     <label for="message">Комментарий</label>
+     <textarea id="message"></textarea>
+
+     <textarea rows="2" cols="12"></textarea><br/>
+
+    <input type="search" type="text"/>
+    <input type="button" value="найти"/><br/>
+     <input type="submit" value="отправить" class="submit"/>
+ </form>
+</div>
+</body>
+</html>

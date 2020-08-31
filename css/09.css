@@ -4,19 +4,19 @@
     font-family: Arial;
 }
 
-body{height:auto;}
-
-p{text-align: left;
-    font-size: large;
+body{height:auto;
 }
-a{text-decoration: none;
 
-}
+/*p{text-align: justify;
+    font-size: large;}*/
+h3{padding: 0 0 5px 5px;}
+
 .container{width: 90%;
     margin: 0 auto;
     position: relative;
     display: block;
-    border: 3px dotted brown;}
+
+}
 
 /*.base{width: auto;
     display: block;
@@ -27,59 +27,86 @@ a{text-decoration: none;
     overflow: hidden;
 }
 .pnlMenu{width: 100%;
-    height:62px;
-    background: whitesmoke;
+    height: 62px;
     display: inline-flex;
+    overflow: auto;
 }
 .menu{width: 170px;
-    height: 30px;
-    margin: 10px 19px 10px 19px;
-    padding: 11px 5px 5px 5px;
+    height: auto;
+    margin: auto;
     display: inline-block;
-    background: palegreen;
     text-align: center;
-    border-radius: 6px;
- }
-.menu:hover{color: orangered;
     font-weight: bolder;
-}
+    border-radius: 6px;
+    line-height: 45px;
+
+ }
+/*.menu:hover{color: orangered;
+    font-weight: bolder;}*/
+
 .content{width: 100%;
+}
+main a{color: black;
 }
 .left_bar{width: 150px;
     position: absolute;
-    margin: 15px 0 0 5px;
+    margin: 30px 0 0 5px;
     padding: 5px;
     float: left;
-    background: whitesmoke;
+    /*background: whitesmoke;*/
     display: block;
+    line-height: 20px;
 }
 .nav{width: 140px;
+    list-style: none;
+}
+ul li a:hover{color: darkorange;}
+
+.hbday{width: 150px;
+    top: 500px;
+    padding: 5px;
+    margin: 5px 0 0 5px;
+    position: absolute;
+    color: blue;
+    /*background: lavenderblush;*/
+    background-image: url("../img/hbday1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hday{text-align: left;
+    font-size: medium;
+    padding: 0 0 0 5px;
 
 }
-.pnl_content{margin-left: 165px;
-    margin-right: 225px;
-    padding: 10px;
+.pnl_content {margin-left: 210px;
+    margin-right: 250px;
+    padding: 15px 10px 10px 10px;
+    overflow: auto;
+    line-height: 1.5em;
 }
-.text{width: 100%;
+.text{/*width: 100%;*/
+    min-width: 500px;
     margin: 10px;
 }
 .img{width: 100%;
     display: block;
     text-align: center;
-    padding: 5px;
-    overflow: hidden;
+    padding: 15px 0 5px 0;
 }
 .sign{text-align: center;
     font-style: initial;
+    font-size: small;
+    float: left;
 }
 .right_bar{width: 210px;
     position: absolute;
-    margin: 20px 0 0 5px;
-    padding: 5px;
+    margin: 30px 0 0 5px;
+    padding: 5px 5px 5px 5px;
     float: right;
     right: 0;
-    top: 200px;
-    background: whitesmoke;
+    top: 208px;
+    /*background: whitesmoke;*/
+    line-height: 20px;
 }
 .pnlNews{width: 205px;
     float: right;
@@ -87,44 +114,30 @@ a{text-decoration: none;
 .news{width: 200px;
     list-style: none;
 }
-ul li{margin: 4px;}
-.hbday{margin-top: 290px;
-    color: orangered;
-    text-align: center;
-    position: absolute;
-}
-
-/*.pnlButton{
-    width: 210px;
-    height: 50px;
+ul li{margin: 8px;}
+.pnlNews ul li:before{content: '\26A1';}
+.go{width: 205px;
+    margin: 30px 0 0 5px;
     float: right;
 }
-.button{
-    width: 200px;
-    height: 40px;
-    font-size: large;
-    font-stretch: ultra-expanded;
-    background: lightgreen;
-    border-radius: 6px;
+.go ul{list-style: none;
 }
-.button:hover{
-    font-size: larger;
-    background: palegreen;
-    border-radius: 6px;
-}*/
 .pnlFooter{width: 100%;
     display: flex;
     margin: auto;
-
 }
 .txtAddr{width: 100%;
     height: 90px;
     margin: auto;
     top: auto;
-    display: flex;
+    /*display: flex;*/
     text-align: center;
     background: whitesmoke;
 }
 .txt{width: 100%;
-    margin: 10px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    line-height: 28px;
 }
+footer p:before{content: ' \00A9';}
+footer p{text-align: center;}
