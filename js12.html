@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+
+<input type="button" id="opener" value="Открыть диалог" />
+
+<div id="pnlDialog" title="Основной диалог">
+    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+
+    <label for="tags">Tags: </label>
+    <input id="tags" />
+</div>
+
+</body>
+
+<script>
+
+    /* Способ запускать код после загрузки страницы. Используется однотипно в других примерах */
+    $(function () {
+
+        /* Включение диалога для контейнера */
+        $( '#pnlDialog' ).dialog({
+            /* Настройка диалога */
+            autoOpen: false // По умолчанию скрытый
+        });
+
+        /* Инофрмация для автозаполнения */
+        var availableTags = [
+            'ActionScript',
+            'AppleScript',
+            'Asp',
+            'BASIC',
+            'C',
+            'C++',
+            'Clojure',
+            'COBOL',
+            'ColdFusion',
+            'Erlang',
+            'Fortran',
+            'Groovy',
+            'Haskell',
+            'Java',
+            'JavaScript',
+            'Lisp',
+            'Perl',
+            'PHP',
+            'Python',
+            'Ruby',
+            'Scala',
+            'Scheme'
+        ];
+
+        /* Включение автозаполнения у инпута */
+        $('#tags').autocomplete({
+            /* Настройка автозаполнения */
+            source: availableTags // Источник данных для автозаполнения
+        });
+
+
+        /* Привязка открытия диалога к кнопке */
+        $( '#opener' ).on( 'click', function() {
+            $( '#pnlDialog' ).dialog( 'open' );
+        });
+
+    });
+</script>
+
+</html>

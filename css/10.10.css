@@ -1,0 +1,54 @@
+.container{width: auto;
+
+}
+.classA{margin: 10px;
+
+}
+.inpA{
+
+}
+
+.inpB{
+
+}
+.classB{margin: 10px;
+
+}
+.inpC{margin: 10px;
+    padding: 4px;
+    background: limegreen;
+
+}
+.inpC:hover{background: #ffffff;
+    border-style: double;
+.classC{margin: 10px;
+}
+.pusInpC{display: inline-block;
+    color: #fff;
+    background: linear-gradient(to bottom, #00acee, #0072e0);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 26px;
+    border-radius: 100px;
+    /* Прозрачная граница, предназначенная для вывода варианта той же кнопки с обводкой */
+    border: 3px solid transparent;
+    text-decoration: none;
+
+
+}
+.pusInpD{display: inline-block;
+    padding: 10px;
+    color: #fff!important;
+    text-decoration: none!important;
+    font-weight: bold; margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius 10px;
+    /*box-shadow: 1px 1px 0 #ccc,
+    2px 2px 0 #c9c9c9,
+    3px 4px 0 #bbb,
+    -1px 1px 0 #ccc,
+    -2px 2px 0 #c9c9c9,
+    -3px 4px 0 #bbb;*/
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<div id="batTest">Кто лишний:<br/></div>
+
+<div id="whoBat">Летучие мыши это:<br/></div>
+
+<script>
+    let dataTypes = ['летучая лисица', 'летучая собака', 'белка летяга'];
+
+    let dataWho = [
+        // 'млекопитающие', 'птицы'
+        {
+            type: 'mammals',
+            text: 'млекопитающие'
+        },
+
+        {
+            type: 'birds',
+            text: 'птицы'
+        }
+    ];
+
+    ///////////////////////
+
+    let pnlTypes = $('#batTest');
+    for (let idxTypes = 0; idxTypes < dataTypes.length; idxTypes++) {
+        let typBat = dataTypes[idxTypes];
+
+        let lblTypes = $('<label/>');
+        lblTypes.attr('for', 'rb' + typBat);
+        lblTypes.text(typBat);
+        pnlTypes.append(lblTypes);
+
+        let radiobutton = $('<input type="radio" name="bat"/>');
+        radiobutton.attr('id', 'rb' + typBat);
+        radiobutton.attr('value', typBat);
+        pnlTypes.append(radiobutton);
+    }
+    //////////////////////
+
+    let pnlWho = $('#whoBat');
+    for (let idxWho = 0; idxWho < dataWho.length; idxWho++) {
+        let whoBats = dataWho[idxWho];
+
+        let lblWho = $('<label/>');
+        lblWho.attr('for', 'wb' + whoBats.type);
+        lblWho.text(whoBats.text);
+        pnlWho.append(lblWho);
+
+        let checkbox = $('<input type="checkbox" name="who"/>');
+        checkbox.attr('id', 'wb' + whoBats.type);
+        checkbox.attr('value', whoBats.type);
+        pnlWho.append(checkbox);
+    }
+
+
+</script>
+</body>
+</html>

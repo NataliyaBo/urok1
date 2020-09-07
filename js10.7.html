@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS10.7</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<table id="tblSpisok"></table>
+
+<script>
+
+    ///////////////////////////////////////////////////////////
+
+    /* Создание пустого массива */
+    /* Объявление переменной */
+    var spisok;
+    /* Определение / задание значения переменной */
+    spisok = [];
+
+    /* Заполнение массива объектами */
+    for (var idxItem = 0; idxItem < 10; idxItem++) {
+        /* Создаём обект */
+        var letter = {};
+        /* Заполняем поля объекта */
+        letter.theme = 'Тема ' + idxItem;
+        letter.comment = 'Коментарий ' + idxItem;
+        /* Помещаем объект в массив */
+        spisok[idxItem] = letter;
+    }
+
+    ///////////////////////////////////////////////////////////
+
+    /* Показ содержимого массива в консоли */
+    console.log(spisok);
+
+    var tbl = $('#tblSpisok');
+
+    for (var item of spisok) {
+
+        var row = $('<tr></tr>');
+
+        var cell;
+
+        cell = $('<td></td>');
+        cell.html(item.theme);
+        row.append(cell);
+
+        cell = $('<td></td>');
+        cell.html(item.comment);
+        row.append(cell);
+
+        tbl.append(row);
+    }
+
+    /* Заполнить таблицу значениями */
+</script>
+</body>
+</html>

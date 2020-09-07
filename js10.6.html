@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS10.6</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <style>
+        .chetnyy {
+            background: yellow;
+        }
+
+        .noChetnyy {
+            background: lightgreen;
+        }
+    </style>
+    <script>
+        var a;
+        a = {};
+        // console.log(a);
+        a.val1 = '10';
+        a.val2 = 40;
+        console.log(a);
+
+        /* Выполнение скрипта после загрузки страницы */
+        $(function () {
+            // Здесь пишется код, который должен отработать после загрузки
+            $('#abz').html('жлвок ьдлвко ыдщукыл');
+            $('#btnWOName').val('рпарп');
+        });
+    </script>
+</head>
+<body>
+
+<p id="abz">xxxx</p>
+<input type="text" id="btnWOName" value="222"/>
+
+<table id="tblSpisok"></table>
+
+<script>
+    /* Создание пустого массива */
+    var spisok = [];
+
+    /* Заполнение массива строками */
+    for (var idxItem = 0; idxItem < 10; idxItem++) {
+        spisok[idxItem] = 'Текст' + idxItem;
+    }
+
+    /* Показ содержимого массива в консоли */
+    console.log(spisok);
+
+    /* Получение таблицы со страницы, по ID */
+    var tbl = $('#tblSpisok');
+    var isChetnyy = false;
+
+    /* Цикл построения таблицы из данных массива */
+    for (var idxItem = 0; idxItem < spisok.length; idxItem++) {
+
+        /* Получение элемента масива */
+        var item = spisok[idxItem];
+
+        /* Создание объекта строки таблицы */
+        var row = $('<tr></tr>');
+
+        if (isChetnyy) {
+            row.addClass('chetnyy');
+        } else {
+            row.addClass('noChetnyy');
+        }
+
+        /* Создание объекта первой ячейки строки */
+        var cell = $('<td></td>');
+        /* Установка текста ячейки */
+        cell.html(idxItem);
+        /* Добавление первой ячеки в строку */
+        row.append(cell);
+
+        /* Создание объекта второй ячейки строки */
+        cell = $('<td></td>');
+        /* Установка текста ячейки */
+        cell.html(item);
+        /* Добавление второй ячеки в строку */
+        row.append(cell);
+
+        /* Добавление строки в таблицу */
+        tbl.append(row);
+
+        isChetnyy = !isChetnyy;
+    }
+</script>
+
+</body>
+</html>

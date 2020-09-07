@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<div id="pnlRase"></div>
+
+<select id="selProfession"></select>
+
+<input type="text" id="inpFirstName"/>
+
+<script>
+
+    let dataRaces = ['nigga', 'snow', 'guk'];
+
+    let dataProfessions = ['дворник', 'директор', 'инженер', 'птичник'];
+
+    let dataMan = {
+        race: 'nigga',
+        profession: 'инженер',
+        firstName: 'Иван'
+    };
+
+    // ///////////////////////////////////////////////////
+
+    let pnlRace = $('#pnlRase');
+
+    for(let idxRace = 0; idxRace < dataRaces.length; idxRace++) {
+        let raceCurrent = dataRaces[idxRace];
+
+        let lblRace = $('<label/>');
+        lblRace.attr('for', 'rb' + raceCurrent);
+        lblRace.text(raceCurrent);
+        pnlRace.append(lblRace);
+
+        let radiobutton = $('<input type="radio" name="raceForMan"/>');
+        radiobutton.attr('id', 'rb' + raceCurrent);
+        if(raceCurrent == dataMan.race) {
+            radiobutton.attr('checked', 'checked');
+        }
+        radiobutton.attr('value', raceCurrent);
+        pnlRace.append(radiobutton);
+    }
+
+    // ////////////////////////////////////////////////////////
+
+    let selProfession = $('#selProfession');
+
+    for (let idxProf =0; idxProf < dataProfessions.length; idxProf++) {
+        let profCurrent = dataProfessions[idxProf];
+
+        let opt = $('<option/>');
+        opt.attr('value', profCurrent);
+        opt.text(profCurrent);
+        if (profCurrent == dataMan.profession) {
+            opt.attr('selected', 'selected');
+        }
+        selProfession.append(opt);
+
+    }
+
+    let inpFirstName = $('#inpFirstName');
+    inpFirstName.val(dataMan.firstName);
+
+</script>
+</body>
+</html>
