@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Highslide JS - Custom Example</title>
+    <link rel="stylesheet" type="text/css" href="highslide/highslide.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.1/swfobject.js"></script>
+    <script type="text/javascript" src="highslide/easing_equations.js"></script>
+    <!--    <script type="text/javascript" src="highslide/highslide-with-gallery.js"></script>-->
+    <script type="text/javascript" src="highslide/highslide2.js"></script>
+    <!--    <script type="text/javascript" src="highslide/highslide.config.js"></script>-->
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        hs.showCredits = 0;
+        hs.padToMinWidth = true;
+
+
+        // //hs.align = 'center';
+        // if (hs.registerOverlay) {
+        //     // The white controlbar overlay
+        //     hs.registerOverlay({
+        //         thumbnailId: 'thumb3',
+        //         overlayId: 'controlbar',
+        //         position: 'top right',
+        //         hideOnMouseOut: true
+        //     });
+        //     // The simple semitransparent close button overlay
+        //     hs.registerOverlay({
+        //         thumbnailId: 'thumb2',
+        //         html: '<div class="closebutton"	onclick="return hs.close(this)" title="Close"></div>',
+        //         position: 'top right',
+        //         fade: 2 // fading the semi-transparent overlay looks bad in IE
+        //     });
+        // }
+        //
+        // // ONLY FOR THIS EXAMPLE PAGE!
+        // // Initialize wrapper for rounded-white. The default wrapper (drop-shadow)
+        // // is initialized internally.
+        // if (hs.addEventListener && hs.Outline) hs.addEventListener(window, 'load', function () {
+        //     new hs.Outline('rounded-white');
+        //     new hs.Outline('glossy-dark');
+        // });
+        //
+        // // The gallery example on the front page
+        // var galleryOptions = {
+        //     slideshowGroup: 'gallery',
+        //     wrapperClassName: 'dark',
+        //     //outlineType: 'glossy-dark',
+        //     dimmingOpacity: 0.8,
+        //     align: 'center',
+        //     transitions: ['expand', 'crossfade'],
+        //     fadeInOut: true,
+        //     wrapperClassName: 'borderless floating-caption',
+        //     marginLeft: 100,
+        //     marginBottom: 80,
+        //     numberPosition: 'caption'
+        // };
+        //
+        // if (hs.addSlideshow) hs.addSlideshow({
+        //     slideshowGroup: 'gallery',
+        //     interval: 5000,
+        //     repeat: false,
+        //     useControls: true,
+        //     overlayOptions: {
+        //         className: 'text-controls',
+        //         position: 'bottom center',
+        //         relativeTo: 'viewport',
+        //         offsetY: -60
+        //     },
+        //     thumbstrip: {
+        //         position: 'bottom center',
+        //         mode: 'horizontal',
+        //         relativeTo: 'viewport'
+        //     }
+        //
+        // });
+        // hs.Expander.prototype.onInit = function() {
+        //     hs.marginBottom = (this.slideshowGroup == 'gallery') ? 150 : 15;
+        // }
+        //
+        // // focus the name field
+        // hs.Expander.prototype.onAfterExpand = function() {
+        //
+        //     if (this.a.id == 'contactAnchor') {
+        //         var iframe = window.frames[this.iframe.name],
+        //             doc = iframe.document;
+        //         if (doc.getElementById("theForm")) {
+        //             doc.getElementById("theForm").elements["name"].focus();
+        //         }
+        //
+        //     }
+        // }
+        //]]>
+
+        hs.graphicsDir = 'highslide/graphics/';
+        hs.outlineType = 'custom';
+        hs.fadeInOut = true;
+        hs.align = 'center';
+        hs.captionEval = 'this.a.title';
+
+
+        // Add the slideshow controller
+        hs.addSlideshow({
+            slideshowGroup: 'group1',
+            interval: 5000,
+            repeat: false,
+            useControls: true,
+            fixedControls: 'fit',
+            overlayOptions: {
+                className: 'large-dark',
+                opacity: 0.6,
+                position: 'bottom center',
+                offsetX: 0,
+                offsetY: -15,
+                hideOnMouseOut: true
+            },
+            thumbstrip: {
+                mode: 'horizontal',
+                position: 'bottom center',
+                relativeTo: 'viewport'
+            }
+
+        });
+
+        // gallery config object
+        var config1 = {
+            slideshowGroup: 'group1',
+            transitions: ['expand', 'crossfade']
+        };
+    </script>
+
+</head>
+<body>
+<h3>Gallery</h3>
+<div class="highslide-gallery">
+    <ul>
+        <li>
+            <a href="highslide/sample-images/thumbstrip01.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip01.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip02.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip02.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip12.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip12.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip07.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip07.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip22.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip22.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip24.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip24.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip03.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip03.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip05.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip05.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip06.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip06.thumb.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="highslide/sample-images/thumbstrip08.jpg" class="highslide"
+               title="Caption from the anchor's title attribute"
+               onclick="return hs.expand(this, config1 )">
+                <img src="highslide/sample-images/thumbstrip08.thumb.jpg" alt=""/>
+            </a>
+        </li>
+    </ul>
+    <div style="clear:both"></div>
+</div>
+
+</body>
+</html>
