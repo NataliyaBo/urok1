@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div id="admJohnson"></div>
+</body>
+<script>
+
+    function printVal(val){
+        let pnlVal = $('<div />');
+        pnlVal.text(val);
+        let container = $('#admJohnson');
+        container.append(pnlVal);
+    }
+
+
+
+    let admin;
+    let name = 'Johnson';
+    admin = name;
+    printVal(admin);
+    // console.log(admin);
+
+    let ourPlanetName = 'Earth';
+
+    const yourBirthday = '05.05.1995';//константа неизменна - при введении другой даты будет объявлена ошибка
+    // yourBirthday = '06.05.1995';  //ошибка
+
+    const BIG_BLUE_PLANET = 'Earth';   //константа - неизменяемая перем-я (использование верх-го регистра)
+    let planet = BIG_BLUE_PLANET;      //можно задать через перемнную, с которой проще работать
+    printVal(planet);
+    // console.log(planet);
+
+    let currentUserName = 'Johnson';
+
+    let earth = "40000km";
+    let moon = '10917km';
+    let isGreater = earth > moon;   //логический: верно/неверно, да/нет,...
+    // console.log(isGreater);
+    printVal(isGreater);
+
+    let user = {
+        name: 'Johnson',
+        age: "33",
+        isAdmin: true,
+        'from planet earth': true,  //имя свой-ва в виде выражения из неск-х слов 'from planet earth'
+    };
+    printVal(user.name);
+    printVal(user.age);
+    printVal(user.isAdmin);
+    printVal(user['from planet earth']);  //доступ к свой-ву в виде выражения  возможен через квадр-е скобки
+    // printVal(user);
+    console.log(user);
+
+    let key = 'from planet earth';   //имя свой-ва в виде выражения можно выразить через перемн-ю
+    user[key] = true;
+
+    // let кеу = prompt('Узнать имя админа?', 'name');
+    let кеу = 'name';
+    printVal(user[key]);
+    // console.log(user[key]);    //это завязано со строкой 17?
+
+    let h = 5e10;
+    printVal(h);
+    // console.log(h);
+
+    let num = 322;
+    printVal(num.toString(16));
+    // console.log(num.toString(16));
+
+    printVal(223315..toString(36));
+    // console.log(223315..toString(36));
+
+    num = 14.568;
+    printVal(num.toFixed(2));
+    // console.log(num.toFixed(2));   // округление до нужного количества знаков указанных в скобках
+
+    printVal(typeof num);
+
+    let infi = 1 / 0;
+    printVal(infi);
+
+    let nan = 'jhgj' / 3;
+    printVal(nan);
+
+    let notInit;
+    printVal(notInit);
+
+    if('undefined' == typeof notExists) { // Проверили, что тип несуществующей переменной 'undefined'
+        printVal('undefined'); // Да, 'undefined' - напечатали слово 'undefined'
+    }
+
+    let bestBumblebees = `Bumblebee:
+    * Rocket
+    * Tank
+    * Chamomile
+    * Fatty
+    `;                             // кавычки '' и "" создают строку
+    // printVal(bestBumblebees);
+    console.log(bestBumblebees);  // обратные кавычки дают вместить бальший объем инф-ии: выражения в ${} и более одной строки
+
+    bestBumblebees = "Bumblebee:\n *Rocket\n *Tank\n *Chamomile\n *Fatty\n";   //многострочный список в "" кавычка со спецсимволом перевода строки
+    // printVal(bestBumblebees);
+    console.log(bestBumblebees);
+
+    user = {};
+    user['from planet earth'] = true;
+    console.log(user["from planet earth"]);
+
+    printVal('end');
+
+</script>
+</html>
